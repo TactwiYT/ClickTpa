@@ -1,0 +1,139 @@
+# "ClickTpa" Config Dosyası.
+# Versiyon v1.5.1
+# Yapımcı: jklmao
+# Türkçe Yapan: Tactwi
+
+# # # # # # # # # # # # # # # # # # # # # # # # #
+#                                               #
+#           ClickTpa Config Dosyası             #
+#                                               #
+# # # # # # # # # # # # # # # # # # # # # # # # # 
+
+#           Be aware of all warnings!           #
+
+# # # # # # # # # # # # # # # # # # # # # # # # #
+#                                               #
+#                 Place Holders                 #
+#                                               #
+# # # # # # # # # # # # # # # # # # # # # # # # # 
+
+Player-only-command: '&cSadece Oyuncular Kullanabilir!'
+
+Insufficient-permission: '&cBunu Gerçekleştirmek İçin Gerekli Yetkiye Sahip Değilsin!'
+
+Player-deny-tpa-message: '&cIşınlanma talebi kabul edilmedi.'
+
+Target-deny-tpa-message: '&cIşınlanma talebi reddedildi.'
+
+Target-teleportion-canceled: '&cIşınlanma iptal edildi...'
+
+Player-got-accepted-tpa: '&bIşınlanma isteği kabul edildi.'
+
+Countdown-until-tpa: '&eGöz açıp kapayasıya kadar kendini istediğin yerde bulacaksın!'
+
+Player-no-pendingtpa-message: '&cBekleyen bir talep yok!'
+
+Target-accepted-tpa-request: '&eIşınlanma talebi kabul edildi.'
+
+No-player-found: '&cBu oyuncu mevcut değil!'
+
+Target-is-offline: '&cBu oyuncu şuanda çevrimdışı.'
+
+Player-teleporting-self: '&cŞakacı Çocuk :)'
+
+Player-already-requested: '&cZaten Bir Talebin Var,Lütfen Bekle...'
+
+Player-teleportation-request-expire: '&cIşınlanma talebinin süresi doldu.'
+
+Target-teleportation-request-expire: '&cIşınlanma talebinin süresi doldu.'
+
+Player-currently-teleporting: '&bIşınlanıyorsun...'
+
+Target-currently-teleporting: '&eOyuncu sana ışınlanıyor...'
+
+Player-TpToggle-Off: '&eIşınlanma &6OFF'
+
+Player-TpToggle-On: '&eIşınlanma &6ON'
+
+Target-Is-TpToggled: '&6%target% &eIşınlanma kapalı!'
+
+Player-Is-TpToggled: '&cVuruldun!'
+
+Tpacancel-message: '&6Işınlanma talebi iptal edildi.'
+
+
+# Kaç saniye içinde ışınlanacağı seçin
+# Lütfen sayı girin
+
+Seconds-until-tpa: 3
+
+
+# Bu bölümde dikkat edin!
+# bu, bir oyuncunun yeterli argüman kullanmadığı zamandır
+# Örneğin, bir oyuncu '/tpa' yaptığında, 'Kullanım: /tpa <player>' diyecektir.
+# Bu yüzden lütfen doğru komutu doğru mesajın altına yerleştirin!
+# Not: '/tpahere' aynı zamanda '/s'dir (essentials komut).
+
+
+Tpa-usage: '&cLütfen bu komutu kullan: /tpa <oyuncu>'
+
+Tpahere-usage: '&cLütfen bu komutu kullan: /tpahere <oyuncu>'
+
+Tpaccept-usage: '&cLütfen bu komutu kullan: /tpaccept <oyuncu>'
+
+Tpdeny-usage: '&cLütfen bu komutu kullan: /tpadeny <oyuncu>'
+
+Tpo-usage: '&cLütfen bu komutu kullan: /tpa <player>'
+
+Tpohere-usage: '&cLütfen bu komutu kullan: /tpahere <oyuncu> ya da /s <oyuncu>' 
+
+
+# # # # # # # # # # # # # # # # # # # # # # # # #
+#                                               #
+#                   Okuyun!                     #
+#                                               #
+# # # # # # # # # # # # # # # # # # # # # # # # # 
+
+# Bu bölüm, bir oyuncunun bir tpa isteği aldığı zamandır
+# Kullanılan kod birçok parçaya bölündüğü için birçok mesaj gelecektir.
+# "Tıkla-x" mesajlarına ne yaparsanız yapın, 'Tpa-mesajında' aynı olacaktır
+# Dikkat olun!
+
+# Oyuncuların Işınlanırken Hareket Edip Edemeyeceğini Düzenleyin.
+
+Allow-player-to-move: false
+
+Player-moved-before-tp: '&6Işınlanma talebi iptal edildi. [Sebep] %player% Hareket Etti!'
+
+Player-sent-request: '&6%target% &cAdlı oyuncuya ışınlanma talebi gönderildi!'
+
+Tpa-message: 
+  - ''
+  - '&6%player% &eSana ışınlanmak istiyor.'
+  - '&eIşınlanmak İçin %accept% &e reddetmek için %deny% &e Seç!'
+  - '&eIşınlanma talebi 120 saniye içinde süresi dolacak.'
+  - ''
+
+Tpahere-message: 
+  - ''
+  - '&6%player% &esizi birisine ışınlamak istiyor.'
+  - '&eIşınlanmak İçin %accept% &e reddetmek için %deny% %e Seç!'
+  - '&eIşınlanma talebi 120 saniye içinde süresi dolacak.'
+  - ''
+
+# Işınlanma isteğini kabul et / reddet mesajları
+Added-accept-deny-space: true
+
+Click-to-accept: '&a&l&n[KABUL ET]&r'
+Click-to-deny: '&c&l&n[REDDET]&r'
+
+Hover-message-on-accept: '&aIşınlanmak için KABUL ET yazısına tıkla'
+Hover-message-on-deny: '&cReddetmek için REDDET yazısına tıkla'
+
+
+op-request: off
+
+#~~~~~~~~~~~~~~~~~~~~~~~#
+# Daha fazlası yakında! #
+#~~~~~~~~~~~~~~~~~~~~~~~#
+
